@@ -22,22 +22,30 @@
 
 <script>
     const labels = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
+      '12:00',
+      '13:00',
+      '14:00',
+      '15:00',
+      '16:00',
+      '17:00',
     ];
   
     const data = {
       labels: labels,
       datasets: [{
-        label: 'My First dataset',
+        label: 'Gráficos de Temperatura e Umidade',
         backgroundColor: 'rgb(255, 0, 0)',
         borderColor: 'rgb(255, 0, 0)',
-        data: [3, 10, 5, 2, 20, 30, 45],
-      },]
+        data: [30, 29, 28, 25, 22, 23,],
+        data: [80, 82, 80, 85, 80, 83,],
+      },
+      {
+      label: 'Gráficos de Temperatura e Umidade 2',
+        backgroundColor: 'rgb(255, 0, 0)',
+        borderColor: 'red',
+        data: [22, 24, 27, 23, 20, 18,],
+      }
+    ]
     };
   
     const config = {
